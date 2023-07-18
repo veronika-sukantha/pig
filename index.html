@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pig Emoji</title>
+    <style>
+
+ body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.head {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 20px;
+  border: 2px solid black;
+  background: #ffc0cb;
+}
+
+.ear {
+  position: absolute;
+  z-index: -1;
+  width: 50px;
+  height: 50px;
+  top: -20px;
+  background: #ffc0cb;
+  border: 2px solid black;
+  border-radius: 50%;
+}
+
+.ear:first-child {
+  left: 10px;
+}
+
+.ear:nth-child(2) {
+  right: 10px;
+}
+
+.in-ear {
+  width: 70%;
+  height: 70%;
+  margin-left: 5px;
+  margin-top: 8px;
+  border-radius: 50%;
+  background: rgb(244, 8, 8);
+}
+
+.eye {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 40px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid black;
+  background: white;
+}
+
+.eye:first-child {
+  left: 30px;
+}
+
+.eye:last-child {
+  right: 30px;
+}
+
+.pupil {
+  width: 70%;
+  height: 70%;
+  margin-top: 20px;
+  border-radius: 50%;
+  background: black;
+}
+
+.nose {
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 2px solid black;
+  border-radius: 100%;
+  background: #ff77d0;
+}
+
+.nostril {
+  width: 25%;
+  height: 50%;
+  border-radius: 50%;
+  background: rgb(249, 9, 177);
+}
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="head">
+        <div>
+          <div class="ear">
+            <div class="in-ear"></div>
+          </div>
+          <div class="ear">
+            <div class="in-ear"></div>
+          </div>
+        </div>
+
+        <div>
+          <div class="eye">
+            <div class="pupil"></div>
+          </div>
+          <div class="eye">
+            <div class="pupil"></div>
+          </div>
+        </div>
+
+        <div class="nose">
+          <div class="nostril"></div>
+          <div class="nostril"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
